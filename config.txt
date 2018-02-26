@@ -1,0 +1,2 @@
+OUTDIR	./test
+SERVER	/mnt/dfc_data1/zhoujj/public_hub/lncfuntk/jobs
