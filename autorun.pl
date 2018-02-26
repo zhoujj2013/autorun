@@ -71,7 +71,7 @@ while(1){
 			chdir "$out_dir/$k/";
 			# generate configure file for lncfuntk analysis.
 			&generate_config();
-			`perl /lustre/zhoujj/project/57.lncfuntk/test1/lncfuntk/run_lncfuntk.pl ./config.txt`;
+			`perl $conf{PRO} ./config.txt`;
 			chdir "$pwd";
 			`nohup make > make.log 2>make.err &`;
 		}elsif(exists $submitted_dir{$k} && exists $submitted_finished_dir{$k}){
